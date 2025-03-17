@@ -430,7 +430,7 @@ const coffeeProducts = [
     { name: "SPANISH LATTE", price: " ₱110" },
     { name: "VANILLA LATTE", price: " ₱120" },
     { name: "HAZELNUT", price: " ₱120" },
-    { name: "BUTTERSCOTCH", price: " ₱120" },
+    { name: "BUTTER SCOTCH", price: " ₱120" },
     { name: "CREME BRULEE", price: " ₱120" },
     { name: "TOFFEE NUT", price: " ₱120" },
     { name: "CAFE MOCHA", price: " ₱125" },
