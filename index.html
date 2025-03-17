@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="description" content="Better Coffee.">
+        <meta name="author" content="Marco Renei A. Barlis">
+        <meta http-equiv="refresh" content="30">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <title>Better Coffee.</title>
+        
+        
+        <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+      ></script>
+
+      <script type="text/javascript">
+        emailjs.init("8X-4miIAsIDijmI-T")
+      </script>
+        
+        
+       
+    </head>
+
+<body>
+   
+    <div class="scroll-progress"></div>
+   
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p> New Biscoff Frappe available! Try our new blend</p>
+    </div>
+    <section>
+        <nav class="navbar">
+         <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">Better Coffee.</a>
+            <button class="navbar-toggle" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </button>
+            <ul class="navbar-menu">
+               <li><a href="#home">Home</a></li>
+               <li><a href="#Products">Products</a></li>
+               <li><a href="#contact">Contact</a></li>
+               <li><a href="#about">About Us</a></li>
+            </ul>
+         </div>
+      </nav>
+
+      <!-- Home Section -->
+      <div class="home">
+         <section id="home">
+            <h1>Better Coffee</h1>
+            <p>Turning Something Bitter Into Something Better</p>
+            <a href="#Products" class="hero-btn">Explore Our Products</a>
+         </section>
+      </div>
+
+      <div class="home-transition"></div>
+
+      <!-- Call to Action Section -->
+      <section id="cta" class="cta">
+         <div class="cta-container">
+            <h2>Experience Better Coffee Today!</h2>
+            <p>Order now and get your first cup of coffee and experience the savory coffee of Better Coffee.</p>
+            <a href="#contact" class="cta-btn">Contact Us</a>
+         </div>
+      </section>
+
+      <div class="home-transition"></div>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials">
+         <h2>What Our Customers Say</h2>
+         <div class="testimonials-container">
+            <div class="testimonial">
+               <p>"Better Coffee changed my evenings! The rich aroma and smooth taste make it the perfect start to my day." - Marean Nichole</p>
+            </div>
+            <div class="testimonial">
+               <p>"I love how fresh the coffee is! It's not just a drink, it’s an experience!" - Andrea Jhoy</p>
+            </div>
+            <div class="testimonial">
+                <p>"Great Customer service! They serve Quality food and drinks. Kudos" - Nagales Quetua</p>
+             </div>
+             <div class="testimonial">
+                <p>"Sulit ang drinks and snack! Perfect place sa mga gusto mag chill! Recommended!" - Marjorie Luna</p>
+             </div>
+             <div class="testimonial">
+                <p>"very accomodating staff! Worth the price ang food and drinks. Will Definitely visit again!" - Joy Arcilla</p>
+             </div>
+         </div>
+      </section>
+
+    </div>
+</header>
+
+<div class="section-divider"></div>
+<!-- coffee  Products Section -->
+ <section id="Products">
+<h1>Our Coffee</h1>
+
+
+<div class="product-container">
+    <button class="nav-btn" onclick="prevProduct('coffee')">&#10094;</button>
+    <div class="product">
+        <h2 id="coffee-name"></h2>
+        <p id="coffee-price"></p>
+    </div>
+  
+    <button class="nav-btn" onclick="nextProduct('coffee')">&#10095;</button>
+</div>
+
+<!-- food Products Section -->
+<h1>Our Food</h1>
+
+
+<div class="product-container">
+    <button class="nav-btn" onclick="prevProduct('food')">&#10094;</button>
+    <div class="product">
+        <h2 id="food-name"></h2>
+        <p id="food-price"></p>
+    </div>
+  
+    <button class="nav-btn" onclick="nextProduct('food')">&#10095;</button>
+</div>
+
+</section>
+
+  
+  <div class="section-divider"></div>
+   
+      
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div class="contact-container">
+           <h2>Contact Us</h2>
+           <p style="text-align: center;">Get in touch with us. We'd love to hear from you!</p>
+           
+           <div class="contact-info">
+              <div class="info-item">
+                 <i class="fas fa-map-marker-alt"></i>
+                 <p>162 Camino Drive, San Nicholas, Gapan City, Nueva Ecija</p>
+              </div>
+              <div class="info-item">
+                 <i class="fas fa-phone"></i>
+                 <p>+63 915 300 1639</p>
+              </div>
+              <div class="info-item">
+                 <i class="fas fa-envelope"></i>
+                 <p>162better.coffee@gmail.com</p>
+              </div>
+           </div>
+
+           <form id="contactForm" class="contact-form">
+            <div class="form-group">
+                <input type="text" id="from_name" name="from_name" required>
+                <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+                <input type="email" id="from_email" name="from_email" required>
+                <label for="email">Your Email</label>
+            </div>
+            <div class="form-group">
+                <input type="text" id="subject" name="subject" required>
+                <label for="subject">Subject</label>
+            </div>
+            <div class="form-group">
+                <textarea id="message" name="message" required></textarea>
+                <label for="message">Your Message</label>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+           
+        </div>
+      </section>
+
+     
+   <div class="section-divider"></div>
+   
+      <section id="about" class="about">
+          <div class="about-container">
+              <h2>Our Story</h2>
+              <div class="about-content">
+                  <div class="about-text">
+                      <p class="highlight">Since 2022</p>
+                      <p>Better Coffee started as a small coffee shop in Gapan with a big dream - to serve the perfect cup of coffee to our community. Today, we continue that mission with passion and dedication.</p>
+                  </div>
+                  <div class="about-gallery">
+                      <div class="main-image-container">
+                          <img src=".vscode/481671213_622086877410126_7814115598192522277_n.jpg" alt="Main Coffee Shop Image" id="mainImage">
+                      </div>
+                </div>
+            </div>
+           </div>
+           <div class="about-container">
+                       
+            <div class="about-content">
+                      <div class="about-text">
+                        <p class="highlight">We Value Our Customers</p>
+                        <p>Better Coffee values it's coffee family, making sure we serve every customer with hospitality, making them feel at home.</p>
+                    </div>
+                    <div class="about-gallery">
+                        <div class="main-image-container">
+                            <img src=".vscode/481670097_621651077453706_7024969279743924238_n.jpg" alt="Main Coffee Shop Image" id="mainImage">
+                        </div>
+                </div>
+                </div>
+           </div>
+                <div class="about-container">
+ 
+                        <div class="about-content">
+                        <div class="about-text">
+                            <p class="highlight">Better Coffee For Everyone</p>
+                            <p>We at Better Coffee aim to be inclusive, no matter your taste or allergies we aim to have the ability to give you plenty menu options and alternatives so that everyone can have Better Coffee.</p>
+                        </div>
+                        <div class="about-gallery">
+                            <div class="main-image-container">
+                                <img src=".vscode/481363495_621650900787057_4396579468746682828_n.jpg" alt="Main Coffee Shop Image" id="mainImage">
+                            </div>
+                      
+                         
+                         
+                      
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Footer -->
+    <section>
+      <footer> 
+        <div class="footer-content">
+            <div class="footer-section">
+               <h3>Better Coffee.</h3>
+               <p>Turning Something Bitter Into Something Better</p>
+            </div>
+         </div>
+         <div class="footer-bottom">
+            <p>&copy; 2025 Better Coffee. All rights reserved. | Author: Marco Renei Barlis</p>
+         </div>
+      </footer>
+   </section>
+
+            
+    
+ 
+  
+   
+   
+   
+   <script src="navigation.js"></script>
+</body>
+</html>
