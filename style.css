@@ -634,7 +634,7 @@ footer {
 #Products {
     background:
         linear-gradient(to right, white, var(--lighter-brown), rgba(235, 165, 2, 0.486)),
-        url(".vscode/481670097_621651077453706_7024969279743924238_n.jpg");
+        url("481670097_621651077453706_7024969279743924238_n.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -643,7 +643,7 @@ footer {
 .about {
     background:
         linear-gradient(rgba(191, 147, 38, 0.2),rgba(203, 159, 63, 0.3)),
-        url(".vscode/481277484_621651050787042_8012336781416006865_n.jpg");
+        url("481277484_621651050787042_8012336781416006865_n.jpg");
 }
 
 .cta {
